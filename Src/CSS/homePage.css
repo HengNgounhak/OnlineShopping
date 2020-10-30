@@ -1,0 +1,39 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    min-height: 100px;
+    margin: 2em 4em 2em 4em;
+}
+
+.logo {
+    float: left;
+    text-decoration: none;
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+}
+
+.logo span {
+    color: green;
+}
+
+.rightNav {
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+
+.headPicture {
+    height: 600px;
+    background-image: url(../../Assets/Image/Cloths-bc740630f228713e4bb0de8a7bffce22.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
