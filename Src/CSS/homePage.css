@@ -1,7 +1,13 @@
 body {
-    background-color: #f4f4f4;
+    background-color: white;
     margin: 0;
     padding: 0;
+}
+
+.btn-round {
+    color: black;
+    border: none;
+    text-decoration: none;
 }
 
 .navBar {
@@ -80,6 +86,8 @@ body {
 
 .allCard {
     margin-top: 50px;
+    width: 100%;
+    height: 300px;
 }
 
 .card {
@@ -133,8 +141,6 @@ body {
 }
 
 #card1 {
-    width: 100%;
-    height: 100%;
     background-color: palevioletred;
 }
 
@@ -144,4 +150,166 @@ body {
 
 #card3 {
     background-color: purple;
+    white-space: none;
+}
+
+table {
+    white-space: 0px;
+}
+
+.bottomContainer {
+    width: 100%;
+    height: auto;
+}
+
+.bottomContainer .sideNav {
+    vertical-align: top;
+    width: 20%;
+    padding: 30px 0px;
+}
+
+.bottomContainer .sideNav ul {
+    padding: 0px;
+}
+
+.bottomContainer .sideNav ul li {
+    margin: 0px;
+    padding: 15px;
+    display: block;
+}
+
+.bottomContainer .sideNav ul li a {
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.bottomContainer .sideNav ul li a span {
+    margin-left: 10px;
+}
+
+.bottomContainer .sideNav img {
+    width: 80px;
+}
+
+.bottomContainer .sideNav ul li:hover {
+    background-color: silver;
+}
+
+.bottomContainer .sideNav ul li:hover a {
+    color: white;
+}
+
+.bottomContainer .products {
+    background-color: #f4f4f4;
+}
+
+.bottomContainer .products .cardProduct {
+    width: 25%;
+    border: 3px solid black;
+    float: left;
+    margin-left: 6%;
+    margin-top: 6%;
+    position: relative;
+}
+
+.bottomContainer .products .cardProduct .productImg {
+    text-align: center;
+}
+
+.bottomContainer .products .cardProduct .productImg img {
+    width: 80%;
+}
+
+.bottomContainer .products .cardProduct .productText {
+    padding: 0px 20px;
+    font-size: 24px;
+}
+
+.bottomContainer .products .cardProduct .cardFooter {
+    padding: 0px 20px;
+}
+
+.bottomContainer .products .cardProduct .cardFooter .price {
+    float: left;
+    font-size: 28px;
+    line-height: 10px;
+}
+
+.bottomContainer .products .cardProduct .cardFooter .price #fullPrice {
+    color: red;
+    text-decoration-line: line-through;
+}
+
+.bottomContainer .products .cardProduct .cardFooter .price #discountPrice {
+    color: green;
+}
+
+.bottomContainer .products .cardProduct .cardFooter .buyButton {
+    float: right;
+    margin-top: 20px;
+}
+
+.bottomContainer .products .cardProduct .cardFooter .buyButton button {
+    color: black;
+    background-color: white;
+    font-size: 28px;
+    padding: 10px 30px;
+    box-shadow: 3px 5px gray;
+}
+
+.bottomContainer .products .cardProduct .cardFooter .buyButton a {
+    text-decoration: none;
+    display: block;
+}
+
+.bottomContainer .products .cardProduct .cardFooter .buyButton button:hover {
+    background-color: gray;
+}
+
+.bottomContainer .products .cardProduct .discountLogo {
+    position: absolute;
+    background-color: rgb(255, 145, 0);
+    font-size: 30px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    top: 10px;
+    right: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.bottomContainer .products .cardProduct .discountLogo p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.bottomContainer .products .productFooter {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.bottomContainer .products .productFooter button {
+    color: black;
+    background-color: green;
+    font-size: 28px;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.bottomContainer .products .productFooter a {
+    text-decoration: none;
+    display: block;
+}
+
+.bottomContainer .products .productFooter button:hover {
+    background-color: gray;
 }
