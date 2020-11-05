@@ -82,6 +82,12 @@ body {
     border-radius: 20px;
     border: 3px solid;
     font-size: 20px;
+    background-color: white;
+    background-image: url(../../Assets/Icons/search-solid.svg);
+    background-position: 10px 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding-left: 45px;
 }
 
 .allCard {
@@ -214,8 +220,7 @@ table {
     width: 25%;
     border: 3px solid black;
     float: left;
-    margin-left: 6%;
-    margin-top: 6%;
+    margin: 3% 0 3% 6%;
     position: relative;
 }
 
@@ -253,14 +258,15 @@ table {
 
 .bottomContainer .products .cardProduct .cardFooter .buyButton {
     float: right;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .bottomContainer .products .cardProduct .cardFooter .buyButton button {
     color: black;
     background-color: white;
-    font-size: 28px;
-    padding: 10px 30px;
+    font-size: 24px;
+    border: 3px solid black;
+    padding: 10px 20px;
     box-shadow: 3px 5px gray;
 }
 
@@ -271,6 +277,7 @@ table {
 
 .bottomContainer .products .cardProduct .cardFooter .buyButton button:hover {
     background-color: gray;
+    color: white;
 }
 
 .bottomContainer .products .cardProduct .discountLogo {
@@ -290,14 +297,7 @@ table {
     margin: 0px;
 }
 
-.bottomContainer .products .productFooter {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    top: 50px;
-}
-
-.bottomContainer .products .productFooter button {
+.bottomContainer .products .loadMore button {
     color: black;
     background-color: green;
     font-size: 28px;
@@ -305,11 +305,12 @@ table {
     border-radius: 15px;
 }
 
-.bottomContainer .products .productFooter a {
+.bottomContainer .products .loadMore {
     text-decoration: none;
     display: block;
+    margin: 30px;
 }
 
-.bottomContainer .products .productFooter button:hover {
+.bottomContainer .products .loadMore button:hover {
     background-color: gray;
 }
