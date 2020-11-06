@@ -12,6 +12,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../CSS/homePage.css">
+    <link rel="stylesheet" href="../CSS/productPage.css">
     <link rel="stylesheet" href="../../Assets/Icons/fontawesome-free-5.15.1-web/css/all.css">
 </head>
 
@@ -131,18 +132,24 @@
                             <p>Nike Womens Pink Half Zip Lightweight Hooded Shirt Top Athletic Stretch Size M</p>
                         </div>
                         <div class="button">
-                            <a href=""><button><i class="fas fa-shopping-cart"></i><span> Cart</span></button></a>
-                            <a href=""><button>Male T-Shirt</button></a>
-                            <a href=""><button>Single Color</button></a>
+                            <a href=""><button class="cart"><i class="fas fa-shopping-cart"></i><span> Cart</span></button></a>
+                            <br>
+                            <a href=""><button class="tag">Male T-Shirt</button></a>
+                            <a href=""><button class="tag">Single Color</button></a>
                         </div>
                     </div>
                 </div>
                 <div class="comments">
-                    <h2>Comments</h2>
+                    <h1>Comments</h1>
                     <div class="customerComments">
                         <header>
-                            <i class="fas fa-user-circle"></i>
-                            <p><span>Anonymous</span>Today 4:21pm - 12.06.2020</p>
+                            <div class="icon">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <p>
+                                <span>Anonymous</span>
+                                <br> Today 4:21pm - 12.06.2020
+                            </p>
                         </header>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
@@ -152,8 +159,13 @@
 
                     <div class="customerComments">
                         <header>
-                            <i class="fas fa-user-circle"></i>
-                            <p><span>Anonymous</span>Today 4:21pm - 12.06.2020</p>
+                            <div class="icon">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <p>
+                                <span>Anonymous</span>
+                                <br> Today 4:21pm - 12.06.2020
+                            </p>
                         </header>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
@@ -161,9 +173,18 @@
                         </p>
                     </div>
 
-                    <input type="text" placeholder="Write your review here">
-                    <button><i class="fas fa-paper-plane"></i>Send</button>
-                    <button><i class="fas fa-times"></i>Discard</button>
+                    <form>
+                        <fieldset class="writeComment">
+                            <legend>Write your review here</legend>
+                            <input type="text">
+                        </fieldset>
+                    </form>
+
+                    <div class="summit">
+                        <button class="send"><i class="fas fa-paper-plane"></i>Send</button>
+                        <button><i class="fas fa-times"></i>Discard</button>
+                    </div>
+
                 </div>
             </td>
         </tr>
