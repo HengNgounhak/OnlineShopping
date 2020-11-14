@@ -1,60 +1,54 @@
 body {
+    max-width: 1200px;
     background-color: white;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
-.btn-round {
-    color: black;
-    border: none;
-    text-decoration: none;
-}
-
-.navBar {
+header {
     min-height: 100px;
-    margin: 2em 4em 2em 4em;
+    margin: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.logo {
-    float: left;
+header .logo {
+    margin: auto;
     text-decoration: none;
-    font-size: 54px;
+    font-size: 48px;
     font-weight: bold;
     color: black;
 }
 
-.logo span {
+header .logo span {
     color: green;
 }
 
-.rightNav {
-    float: right;
-    margin-top: 20px;
-}
-
-.rightNav a {
+header .rightNav a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: black;
 }
 
-.navBar button {
+header .rightNav button {
     margin-left: 20px;
     background-color: white;
     border: 3px solid black;
     color: black;
     padding: 7px 20px;
-    font-size: 20px;
+    font-size: 18px;
     box-shadow: 3px 5px gray;
 }
 
-.navBar button:hover {
+header .rightNav button:hover {
     background-color: gray;
 }
 
 .headPicture {
-    min-height: 800px;
+    max-height: 800px;
+    min-height: 600px;
     background-image: url(../../Assets/Image/Cloths-bc740630f228713e4bb0de8a7bffce22.png);
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -63,7 +57,7 @@ body {
 
 .headPicture h1 {
     padding-top: 200px;
-    font-size: 64px;
+    font-size: 58px;
     padding-bottom: 0;
     margin-bottom: 10px;
 }
@@ -72,7 +66,7 @@ body {
     margin-top: 0;
     padding-top: 0;
     color: grey;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .headPicture input {
@@ -93,68 +87,72 @@ body {
 .allCard {
     margin-top: 50px;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.card {
-    margin-left: 5%;
-    float: left;
-    width: 25%;
-    min-height: 200px;
+.allCard .card {
+    margin: 0px 2%;
+    width: 30%;
+    height: 180px;
     padding: 20px 10px 10px 10px;
     text-align: left;
     border: 3px solid black;
     position: relative;
-    font-size: 28px;
+    font-size: 20px;
+    color: white;
 }
 
-.card button {
-    margin-left: 0px;
+.allCard .card button {
+    position: absolute;
+    left: 10px;
+    bottom: 40px;
     background-color: white;
     border: 3px solid black;
     color: black;
     padding: 7px 20px;
-    font-size: 20px;
+    font-size: 16px;
     box-shadow: 3px 5px gray;
 }
 
-.card button:hover {
+.allCard .card button:hover {
     background-color: gray;
 }
 
-.card h3 {
+.allCard .card h3 {
     margin-bottom: 10px;
     padding-bottom: 0;
 }
 
-.card p {
-    font-size: 20px;
+.allCard .card p {
+    font-size: 15px;
     padding-top: 0;
     margin-bottom: 30px;
     margin-top: 0;
     font-weight: bold;
 }
 
-#leftCard {
-    width: 70%;
+.allCard .card #leftCard {
+    width: 75%;
 }
 
-.card img {
-    width: 20%;
+.allCard .card img {
+    width: 25%;
     position: absolute;
     top: 80px;
     right: 10px;
 }
 
-#card1 {
+.allCard #card1 {
     background-color: palevioletred;
 }
 
-#card2 {
+.allCard #card2 {
     background-color: peru;
 }
 
-#card3 {
+.allCard #card3 {
     background-color: purple;
     white-space: none;
 }
@@ -171,7 +169,7 @@ table {
 .bottomContainer .sideNav {
     vertical-align: top;
     width: 20%;
-    padding: 30px 0px;
+    padding: 10px 0px;
 }
 
 .bottomContainer .sideNav ul {
@@ -189,7 +187,7 @@ table {
     display: block;
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     margin: auto;
     display: flex;
@@ -201,7 +199,7 @@ table {
 }
 
 .bottomContainer .sideNav img {
-    width: 80px;
+    width: 60px;
 }
 
 .bottomContainer .sideNav ul li:hover {
@@ -214,13 +212,20 @@ table {
 
 .bottomContainer .products {
     background-color: #f4f4f4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.bottomContainer .products a {
+    text-decoration: none;
+    color: #000;
 }
 
 .bottomContainer .products .cardProduct {
-    width: 25%;
+    margin-top: 30px;
+    width: 28%;
     border: 3px solid black;
-    float: left;
-    margin: 3% 0 3% 6%;
     position: relative;
 }
 
@@ -229,12 +234,12 @@ table {
 }
 
 .bottomContainer .products .cardProduct .productImg img {
-    width: 80%;
+    width: 90%;
 }
 
 .bottomContainer .products .cardProduct .productText {
     padding: 0px 20px;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .bottomContainer .products .cardProduct .cardFooter {
@@ -243,7 +248,7 @@ table {
 
 .bottomContainer .products .cardProduct .cardFooter .price {
     float: left;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 10px;
 }
 
@@ -264,9 +269,9 @@ table {
 .bottomContainer .products .cardProduct .cardFooter .buyButton button {
     color: black;
     background-color: white;
-    font-size: 24px;
+    font-size: 16px;
     border: 3px solid black;
-    padding: 10px 20px;
+    padding: 5px 10px;
     box-shadow: 3px 5px gray;
 }
 
@@ -283,11 +288,11 @@ table {
 .bottomContainer .products .cardProduct .discountLogo {
     position: absolute;
     background-color: rgb(255, 145, 0);
-    font-size: 30px;
-    padding: 10px 10px;
-    border-radius: 15px;
+    font-size: 20px;
+    padding: 5px 8px;
+    border-radius: 10px;
     top: 10px;
-    right: 20px;
+    right: 10px;
     text-align: center;
     vertical-align: top;
 }
@@ -300,9 +305,10 @@ table {
 .bottomContainer .products .loadMore button {
     color: black;
     background-color: green;
-    font-size: 28px;
-    padding: 10px 30px;
-    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .bottomContainer .products .loadMore {
@@ -313,4 +319,255 @@ table {
 
 .bottomContainer .products .loadMore button:hover {
     background-color: gray;
+}
+
+@media(max-width: 1000px) and (min-width: 800px) {
+    header .logo {
+        font-size: 42px;
+    }
+    header .rightNav a {
+        font-size: 17px;
+    }
+    header .rightNav button {
+        font-size: 17px;
+    }
+    .headPicture {
+        min-height: 500px;
+    }
+    .headPicture h1 {
+        padding-top: 150px;
+        font-size: 44px;
+    }
+    .headPicture h6 {
+        font-size: 20px;
+    }
+    .headPicture input {
+        height: 35px;
+        margin-top: 5px;
+        border: 2px solid;
+        font-size: 18px;
+    }
+    .allCard .card button {
+        bottom: 30px;
+    }
+    .bottomContainer .sideNav ul li {
+        padding: 15px 10px;
+    }
+    .bottomContainer .sideNav ul li a {
+        font-size: 16px;
+    }
+    .bottomContainer .sideNav ul li a span {
+        margin-left: 5px;
+    }
+    .bottomContainer .sideNav img {
+        width: 50px;
+    }
+    .bottomContainer .products .cardProduct .productText {
+        padding: 0px 15px;
+        font-size: 15px;
+    }
+    .bottomContainer .products .cardProduct .cardFooter {
+        padding: 0px 15px;
+    }
+    .bottomContainer .products .cardProduct .discountLogo {
+        font-size: 18px;
+        padding: 3px 5px;
+        border-radius: 8px;
+        top: 5px;
+        right: 5px;
+    }
+    .bottomContainer .products .loadMore button {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}
+
+@media(max-width: 800px) and (min-width: 600px) {
+    header {
+        margin: 10px 20px;
+    }
+    header .logo {
+        font-size: 36px;
+    }
+    header .rightNav a {
+        font-size: 16px;
+    }
+    header .rightNav button {
+        font-size: 16px;
+    }
+    .headPicture {
+        min-height: 380px;
+    }
+    .headPicture h1 {
+        padding-top: 90px;
+        font-size: 36px;
+    }
+    .headPicture h6 {
+        font-size: 15px;
+    }
+    .headPicture input {
+        height: 30px;
+        margin-top: 0px;
+        border: 2px solid;
+        font-size: 16px;
+        background-position: 8px 5px;
+        background-size: 25px;
+        padding-left: 35px;
+    }
+    .allCard {
+        min-height: 340px;
+    }
+    .allCard .card {
+        height: 250px;
+        padding: 0px 0px 20px 10px;
+        font-size: 18px;
+    }
+    .allCard .card button {
+        bottom: 20px;
+    }
+    .allCard .card p {
+        font-size: 14px;
+    }
+    .allCard .card #leftCard {
+        width: 90%;
+    }
+    .allCard .card img {
+        width: 40%;
+        top: 100px;
+        left: 10px;
+    }
+    .bottomContainer .sideNav {
+        width: 25%;
+    }
+    .bottomContainer .sideNav ul li {
+        padding: 15px 10px;
+    }
+    .bottomContainer .sideNav ul li a {
+        font-size: 16px;
+    }
+    .bottomContainer .sideNav ul li a span {
+        margin-left: 5px;
+    }
+    .bottomContainer .sideNav img {
+        width: 50px;
+    }
+    .bottomContainer .sideNav ul li {
+        padding: 10px 5px;
+    }
+    .bottomContainer .sideNav ul li a {
+        font-size: 15px;
+    }
+    .bottomContainer .sideNav ul li a span {
+        margin-left: 2px;
+    }
+    .bottomContainer .sideNav img {
+        width: 45px;
+    }
+    .bottomContainer .products .cardProduct {
+        margin-top: 30px;
+        width: 40%;
+    }
+    .bottomContainer .products .cardProduct .productText {
+        padding: 0px 8px;
+        font-size: 15px;
+    }
+    .bottomContainer .products .cardProduct .cardFooter {
+        padding: 0px 8px;
+    }
+    .bottomContainer .products .cardProduct .discountLogo {
+        font-size: 18px;
+        padding: 3px 5px;
+        border-radius: 8px;
+        top: 5px;
+        right: 5px;
+    }
+    .bottomContainer .products .loadMore button {
+        font-size: 17px;
+        padding: 10px 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        margin: 10px 10px;
+    }
+    header .logo {
+        font-size: 28px;
+    }
+    header .rightNav a {
+        font-size: 15px;
+    }
+    header .rightNav button {
+        font-size: 15px;
+        padding: 5px 10px;
+        margin-left: 10px;
+    }
+    .headPicture {
+        min-height: 280px;
+    }
+    .headPicture h1 {
+        padding-top: 50px;
+        font-size: 28px;
+        margin-bottom: 0px;
+    }
+    .headPicture h6 {
+        font-size: 14px;
+    }
+    .headPicture input {
+        height: 25px;
+        margin-top: 0px;
+        border: 2px solid;
+        font-size: 15px;
+        background-position: 5px 3px;
+        background-size: 20px;
+        padding-left: 30px;
+    }
+    .allCard {
+        flex-direction: column;
+        margin: 30px 0px;
+    }
+    .allCard .card {
+        margin: 10px auto;
+        width: 80%;
+        height: 120px;
+        padding: 0px 0px 10px 10px;
+        font-size: 16px;
+    }
+    .allCard .card button {
+        bottom: 15px;
+    }
+    .allCard .card p {
+        font-size: 13px;
+    }
+    .allCard .card #leftCard {
+        width: 90%;
+    }
+    .allCard .card img {
+        width: 80px;
+        top: 30px;
+        right: 10px;
+    }
+    .bottomContainer .sideNav {
+        width: 25%;
+    }
+    .bottomContainer .sideNav ul li {
+        padding: 10px 3px;
+    }
+    .bottomContainer .sideNav ul li a {
+        font-size: 14px;
+    }
+    .bottomContainer .sideNav ul li a span {
+        margin-left: 2px;
+    }
+    .bottomContainer .sideNav img {
+        width: 40px;
+    }
+    .bottomContainer .products .cardProduct {
+        margin-top: 30px;
+        width: 80%;
+    }
+    .bottomContainer .products .loadMore button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
 }
